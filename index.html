@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/amazon icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand hov-border" href="#"><img src="images/logo.png" width="120px" height="37px"></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-address hov-border " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" href="#">
+
+                                <span class="addr-deliver">Deliver to</span>
+                                <div class="icon-location">
+                                    <i class="fa fa-location-dot"></i>
+                                    <span class="navbox-sec-item">Update&nbsp;location</span>
+                                </div>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title fs-5" id="exampleModalLabel">Choose your location
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Select a delivery location to see product availability and delivery
+                                                options</span>
+                                            <a type="button" class="btn btn-warning"> Sign in to see your address</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <span>or enter an Indian pincode</span>
+                                            <input type="text" maxlength="6">
+                                            <button type="button" class="btn btn-light">Apply</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-signin" href="#">
+                                <div class="nav-search">
+                                    <select class="search-select">
+                                        <option selected="selected">All</option>
+                                        <option value="Amazon fashion">Amazon fashion</option>
+                                        <option value="Amazon devices">Amazon devices</option>
+                                    </select>
+                                    <input placeholder="Search Amazon" class="search-input">
+                                    <div class="search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hov-border" href="#">
+                                <span class="navbox-top-item">Hello, Sign in</span>
+                                <div class="icon-location">
+                                    <span class="navbox-sec-item">Account & Lists</span>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hov-border" href="#">
+                                <span class="navbox-top-item">Returns</span>
+                                <div class="icon-location">
+                                    <span class="navbox-sec-item">& Orders</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hov-border" href="#">
+                                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                                <span class="navbox-sec-item">Cart</span>
+                </div>
+                </a>
+                </li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="panel">
+            <div class="panel-all hov-border">
+
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                    <a>All </a>
+                </a>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sign in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h5 class="offcanv-sub-title">Shop By Category</h5>
+                        <div class="offcanv-contents">
+                            <div><a>Your account</a></div>
+                            <div><a>Best Sellers</a></div>
+                            <div> <a>New Releases</a></div>
+                        </div>
+                        <h5 class="offcanv-sub-title">Shop By Category</h5>
+                        <div class="offcanv-contents">
+                            <div><a>Mobiles, Laptops, and Electronics</a></div>
+                            <div><a>Clothing & accessories</a></div>
+                            <div><a>Grocery & food items</a></div>
+                            <div><a>kids toys and fashion</a></div>
+                            <div><a>Home & Kitchen</a></div>
+                            <div><a>Furniture</a></div>
+                            <div><a>Pet care</a></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="panel-opt">
+                <p><a class="hov-border" href="#">Best sellers</a></p>
+                <p><a class="hov-border" href="#todays-deals">Today's deal</a></p>
+                <p><a class="hov-border" href="#">Mobiles</a></p>
+                <p><a class="hov-border" href="#">Electronics</a></p>
+                <p><a class="hov-border" href="#">Fashion</a></p>
+            </div>
+            <div class="panel-deals hov-border">
+                <a>Shop deals in electronics</a>
+            </div>
+
+        </div>
+    </header>
+    <a href="#">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="banner1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="banner2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="banner3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </a>
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('images/beauty-makeup.jpeg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('images/furniture.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('images/electronics-mobile.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Men's Fashion</h2>
+                <div class="box-img" style="background-image: url('images/mens.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                <div class="box-img" style="background-image: url('images/pets.jpeg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Women's Trends</h2>
+                <div class="box-img" style="background-image: url('images/women.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>New Arrival in Toys</h2>
+                <div class="box-img" style="background-image: url('images/kids-toys.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Home & Kitchen</h2>
+                <div class="box-img" style="background-image: url('images/home-cleaningproducts.jpg');"></div>
+                <a href="#">see more</a>
+            </div>
+        </div>
+
+        <!-- Today's deal section -->
+        <div id="todays-deals" >
+            <div class="title-block">
+                <h2>Today's Deals</h2>
+                <a href="#">See all deals</a>
+            </div>
+            <div class="deal-box-list ">
+                <div class="deal-box-content">
+                    <div class="deal-img-bg">
+                        <img src="images/4_XfnFBPeaL._SX679__AC_SY200_.png" alt="">
+                    </div>
+                    <div class="deal-details">
+                        <a class="deal-offer">Up To 25% off</a>
+                        <a class="deal-of-day">Deal of day</a>
+                        <p class="deal-desc">Cookware, Pots & Pans from Top...</p>
+                    </div>
+                </div>
+                <div class="deal-box-content">
+                    <div class="deal-img-bg">
+                        <img src="images/4_vuCvcRl6L._AC_SY200_.png" alt="">
+                    </div>
+                    <div class="deal-details">
+                        <a class="deal-offer">Up To 25% off</a>
+                        <a class="deal-of-day">Deal of day</a>
+                        <p class="deal-desc">Cookware, Pots & Pans from Top...</p>
+                    </div>
+                </div>
+                <div class="deal-box-content">
+                    <div class="deal-img-bg">
+                        <img src="images/4_VNFizEL._SX679__AC_SY200_.png" alt="">
+                    </div>
+                    <div class="deal-details">
+                        <a class="deal-offer">Up To 25% off</a>
+                        <a class="deal-of-day">Deal of day</a>
+                        <p class="deal-desc">Cookware, Pots & Pans from Top...</p>
+                    </div>
+                </div>
+                <div class="deal-box-content">
+                    <div class="deal-img-bg">
+                        <img src="images/4_s3lceq6L._AC_SY200_.png" alt="">
+                    </div>
+                    <div class="deal-details">
+                        <a class="deal-offer">Up To 25% off</a>
+                        <a class="deal-of-day">Deal of day</a>
+                        <p class="deal-desc">Cookware, Pots & Pans from Top...</p>
+                    </div>
+                </div>
+                <div class="deal-box-content">
+                    <div class="deal-img-bg">
+                        <img src="images/4_cookware.png" alt="">
+                    </div>
+                    <div class="deal-details">
+                        <a class="deal-offer">Up To 25% off</a>
+                        <a class="deal-of-day">Deal of day</a>
+                        <p class="deal-desc">Cookware, Pots & Pans from Top...</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- best sellers section -->
+        <div id="best-sellers">
+            <div class="title-block">
+                <h2>Best Sellers</h2>
+            </div>
+            <div class="best-seller-img-bg">
+                <a><img src="images/5_G0iD2cvDL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_dWUMCQzL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_LzuTdkbL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_zRoFrfqL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_3D1eLsaqL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_UOMLuw1gL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_LzuTdkbL._AC_SY200_.jpg" alt=""></a>
+                <a><img src="images/5_zRoFrfqL._AC_SY200_.jpg" alt=""> </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="foot-panel1">
+            <a>Back to top</a>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <li>
+                    <p>Get to Know Us</p>
+                </li>
+                <li class="foot-list"><a href="#">About Us</a></li>
+                <li class="foot-list"><a href="#">Careers</a></li>
+                <li class="foot-list"><a href="#">Press Releases</a></li>
+                <li class="foot-list"><a href="#">Amazon Science</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Connect with Us</p>
+                </li>
+                <li class="foot-list"><a href="#">Facebook</a></li>
+                <li class="foot-list"><a href="#">Twitter</a></li>
+                <li class="foot-list"><a href="#">Instagram</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Get to Know Us</p>
+                </li>
+                <li class="foot-list"><a href="#">About Us</a></li>
+                <li class="foot-list"><a href="#">Careers</a></li>
+                <li class="foot-list"><a href="#">Press Releases</a></li>
+                <li class="foot-list"><a href="#">Amazon Science</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Let Us Help You</p>
+                </li>
+                <li class="foot-list"><a href="#">Your Account</a></li>
+                <li class="foot-list"><a href="#">Careers</a></li>
+                <li class="foot-list"><a href="#">Press Releases</a></li>
+                <li class="foot-list"><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"><a href="#"><img src="images/logo.png" width="120px" height="40px"></a></div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                <span>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

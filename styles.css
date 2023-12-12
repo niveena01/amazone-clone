@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  color: #fff;
+
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.logo {
+  background-size: cover;
+}
+
+.hov-border {
+  border: 1px solid transparent;
+}
+
+.hov-border:hover {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+/* box2-address */
+.nav-address {
+  width: 160px;
+}
+
+.icon-location {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.addr-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  width: 15px;
+  height: 18px;
+  margin-top: 8px;
+}
+
+.addr-deliver {
+  color: #cccc;
+  font-size: 0.85rem;
+  margin-left: 33px;
+}
+.modal-title{
+  color: #0f1111;
+  font-weight: 600;
+}
+.modal-body{
+  color: #0f1111;
+  display: flex;
+  flex-direction: column;
+}.modal-footer{
+  color: #0f1111;
+  display: flex;
+  justify-content: center !important;
+}
+
+.modal{
+  --bs-modal-width: 350px !important;
+}
+.modal-header{
+  background-color: #F0F2F2;
+}
+.navbox-top-item {
+  color: #fff;
+  font-size: 0.78rem;
+  margin-left: 15px;
+}
+
+.cart-icon {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 10px
+}
+
+.navbox-sec-item {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+/* box3-search*/
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aqua;
+  width: 420px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.search-select {
+  background-color: #f3f3f3;
+  width: 50px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-align: center;
+  border: none;
+  ;
+}
+
+.search-input {
+  width: 500px;
+  font-size: 1rem;
+  border: none;
+}
+
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #fedb53;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+}
+
+.nav-search:hover {
+  border: 2px solid#fea653;
+}
+
+/* box4-signin */
+span {
+  font-size: 0.7rem;
+}
+
+.nav-second {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* box6 -cart */
+.nav-cart i {
+  font-size: 25px;
+}
+
+.nav-cart {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nav-cart span {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* panel */
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.panel-opt p {
+  display: inline;
+  margin-left: 10px;
+}
+.offcanv-contents{
+  padding: 5px 10px 16px;
+}
+.panel-opt {
+  width: 70%;
+  font-size: 0.85rem;
+}
+
+.panel-opt a,
+.panel a {
+  color: #fdfffe;
+  text-decoration: none;
+}
+
+.panel-deals {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/*********** Hero-section *********/
+.hero-section {
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ******** shop section ********* */
+.shop-section {
+  background-color: #e2e7e6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+
+}
+
+.box {
+  height: 400px;
+  width: 23%;
+
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px 0px 15px;
+}
+
+.box-img {
+  height: 270px;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.box-content h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.box-content p {
+  color: #007185;
+}
+
+/** today's deals **/
+#todays-deals {
+  background-color: white;
+  height: 355px;
+  width: 100%;
+  margin: 20px 20px 0px 20px;
+  padding: 20px 20px;
+
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-block h2 {
+  margin-right: 10px;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.box-content a,
+.title-block a {
+  color: #007185;
+  font-size: 0.90rem;
+  text-decoration: none;
+}
+
+.box-content a:hover,
+.title-block a:hover {
+  color: #CC0C39;
+  text-decoration: underline;
+}
+
+.deal-box-list {
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deal-box-content {
+  height: 280px;
+  width: 248px;
+}
+
+.deal-img-bg {
+  background-color: #f3f3f3;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-details {
+  height: 50px;
+  padding: 10px 10px 10px 0px;
+}
+
+.deal-offer {
+  background-color: #CC0C39;
+  color: white;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.deal-of-day {
+  font-size: 0.75rem;
+  color: #ce1d47;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.deal-desc {
+  margin-top: 10px;
+  font-size: 0.84rem;
+  color: black;
+}
+
+/* best seller */
+#best-sellers {
+  background-color: white;
+  height: 290px;
+  width: 100%;
+  margin: 20px 20px 0px 20px;
+  padding: 20px 20px;
+
+}
+
+.best-seller-img-bg {
+  display: flex;
+  justify-content: space-between;
+}
+div.scroll {
+  margin: 4px, 4px;
+  padding: 4px;
+  background-color: #848884;
+  width: 300px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/*********** footer ************/
+.foot-panel1 {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.foot-panel2 {
+  background-color: #222f3d;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot-panel2 ul {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.foot-panel2 ul a {
+  color: #ddd !important;
+    display: block;
+    font-size: 0.90rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.foot-list:hover{
+  text-decoration: underline!important;
+}
+
+.foot-panel2 p {
+  font-weight: 700;
+}
+
+.foot-panel3 {
+  background-color: #222f3d;
+  color: white;
+  border-top: 0.5px solid #5d605f;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.foot-panel4 {
+  background-color: #131A22;
+  color: #cfd1d0;
+  height: 80px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.pages {
+  padding-top: 25px;
+}
+
+.copyright {
+  padding-top: 5px;
+}
