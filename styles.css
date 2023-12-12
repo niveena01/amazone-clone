@@ -190,7 +190,9 @@ span {
   width: 70%;
   font-size: 0.85rem;
 }
-
+.panel-all span{
+  font-size: 0.85rem !important;
+}
 .panel-opt a,
 .panel a {
   color: #fdfffe;
